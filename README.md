@@ -17,7 +17,6 @@ To identify annotators capable of understanding the nature of hate speech and ef
 - Out of 10 participants in the pilot, four annotators were shortlisted for the main task such that there were three annotators for each language.
 - Feedback from the pilot study was incorporated to improve instructions for the main task.
 
----
 
 ## Main Annotation Task
 
@@ -37,7 +36,7 @@ To identify annotators capable of understanding the nature of hate speech and ef
 | **Telugu**   | 82.50       | **87.75**   | **88.25**   | 81.00       |
 | **Hindi**    | **86.45**   | **88.00**   | 79.20       | 83.15       |
 | **English**  | **87.60**   | 82.00       | **89.30**   | 85.10       |
----
+
 
 ## Dataset Details
 ### Hindi and English Datasets
