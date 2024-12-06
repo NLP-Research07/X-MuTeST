@@ -94,7 +94,7 @@ We acknowledge prior concerns about biases and artifacts in hate speech datasets
    - Posts were carefully processed and curated to ensure that models trained on this dataset learn meaningful patterns rather than spurious correlations.
 
 
-# Unique Contributions of X-MuTeST in Explainability for Hate Speech Detection
+# Advantages and comparison of X-MuTeST in Explainability for Hate Speech Detection
 
 Our explainability method, **X-MuTeST**, introduces several distinct advantages compared to existing approaches, especially in the domain of hate speech detection:
 
