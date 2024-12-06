@@ -15,7 +15,7 @@ To identify annotators capable of understanding the nature of hate speech and ef
 
 ### Selection Criteria
 - Annotators who demonstrated high-quality annotation by accurately identifying hate speech and corresponding tokens were selected.
-- Out of 10 participants in the pilot, three annotators were shortlisted for the main task.
+- Out of 10 participants in the pilot, four annotators were shortlisted for the main task such that there were three annotators for each language.
 - Feedback from the pilot study was incorporated to improve instructions for the main task.
 
 ---
@@ -37,14 +37,14 @@ To identify annotators capable of understanding the nature of hate speech and ef
 
 ## Dataset Details
 
-- **Total Posts**: 20,148
-  - 9,055 posts from Twitter
-  - 11,093 posts from Gab
-- **Annotations**:
-  - Each post is accompanied by token-level rationales highlighting important words or phrases for classification.
-- **Sampling Strategy**:
-  - Posts were sampled from existing hate speech datasets and manually filtered to ensure diversity in content and linguistic complexity, particularly for under-resourced languages like **Hindi** and **Telugu**.
-
+| **Metric**               | **Telugu** | **Hindi** | **English** |
+|--------------------------|------------|-----------|-------------|
+| **Total Records**        | 4,492      | 6,004     | 6,334       |
+| **Hate Records**         | 2,131      | 2,026     | 3,767       |
+| **Non-Hate Records**     | 2,361      | 3,978     | 2,567       |
+| **Avg Word Count**       | 6.46       | 18.84     | 19.20       |
+| **Avg Character Count**  | 68.98      | 110.93    | 100.47      |
+| **Avg Rationale Length** | 3.10       | 3.26      | 3.78        |
 ---
 
 ## Addressing Potential Dataset Concerns
