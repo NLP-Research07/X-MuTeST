@@ -159,7 +159,7 @@ X-MuTeST achieves a balance between **explainability** and **classification perf
 This dual-stage approach enables X-MuTeST to achieve **improved explainability** and **classification performance** simultaneously.
 
 
-# Advantages and comparison of X-MuTeST in Explainability for Hate Speech Detection
+# Advantages of X-MuTeST over other methods
 
 Our explainability method, **X-MuTeST**, introduces several distinct advantages compared to existing approaches, especially in the domain of hate speech detection:
 
