@@ -81,7 +81,7 @@ The Telugu dataset was sourced from the **Hate and Offensive Language Detection 
 | **Avg Word Count**       | 6.46       | 18.84     | 19.20       |
 | **Avg Character Count**  | 68.98      | 110.93    | 100.47      |
 | **Avg Rationale Length** | 3.10       | 3.26      | 3.78        |
----
+
 
 ## Addressing Potential Dataset Concerns
 
@@ -90,7 +90,7 @@ We acknowledge prior concerns about biases and artifacts in hate speech datasets
    - Annotators were trained to avoid biases by focusing on context and meaning, rather than personal interpretations or stereotypes.
 2. **Reducing Dataset Artifacts**:
    - Posts were carefully processed and curated to ensure that models trained on this dataset learn meaningful patterns rather than spurious correlations.
-
+---
 # Methodology: Unigrams, Bigrams, and Trigrams for Contextual Analysis
 X-MuTeST leverages **n-grams (unigrams, bigrams, trigrams)** to capture context up to **five words** (two to the left and two to the right of the target word). The process for computing word importance is structured as follows:
 
@@ -100,7 +100,6 @@ X-MuTeST leverages **n-grams (unigrams, bigrams, trigrams)** to capture context 
   - The classification probability of the entire sentence.
   - The probability with just the unigram.
 
----
 
 ### b) Bigrams
 - **Contextual Dependence**: Words often derive meaning from adjacent words (e.g., *"not good"* vs. *"good"*).
@@ -109,13 +108,11 @@ X-MuTeST leverages **n-grams (unigrams, bigrams, trigrams)** to capture context 
   - The classification probability for each bigram is calculated, and the **difference** from the full sentence probability is determined.
   - Since multiple bigrams exist for a word, the **average difference** is used as the score.
 
----
 
 ### c) Trigrams
 - **Broader Context**: Extends the analysis to two words on either side of the target word.
 - **Process**: Similar to bigrams, but considers all trigrams containing the target word.
 
----
 
 ### Aggregation of Importance Scores
 - Final importance score for a word is computed by aggregating the unigram, bigram, and trigram scores using weighted contributions:
@@ -124,15 +121,14 @@ X-MuTeST leverages **n-grams (unigrams, bigrams, trigrams)** to capture context 
   - **Trigrams**: 0.2
 - **Higher-Order N-Grams**: Experiments with n-grams larger than trigrams showed no improvement, as additional context did not provide meaningful information.
 
----
 
 It is also to be noted that the proposed framework is devised to not only enhance explainability but also classification performance by incorporating 2-stage training that incorporates human-rationale in the training. Additionally, one of our major contributions lies in proposing a dataset with human-annotated datasets to address the challenges of explainable hate speech detection in under-resourced languages.
 
+---
 # Advantages and comparison of X-MuTeST in Explainability for Hate Speech Detection
 
 Our explainability method, **X-MuTeST**, introduces several distinct advantages compared to existing approaches, especially in the domain of hate speech detection:
 
----
 
 ## a) Comparison with Attention-Based Methods
 - **Limitations of Attention-Based Methods**:
@@ -143,7 +139,6 @@ Our explainability method, **X-MuTeST**, introduces several distinct advantages 
 - **X-MuTeST Advantage**:
   - Unlike attention-based methods, X-MuTeST directly computes token importance from model outputs using **contextual perturbations**, offering a more interpretable and grounded explanation mechanism.
 
----
 
 ## b) Comparison with Integrated Gradients (IG)
 - **Limitations of IG**:
@@ -152,7 +147,6 @@ Our explainability method, **X-MuTeST**, introduces several distinct advantages 
   - Explicitly evaluates **contextual dependencies** using **bigrams and trigrams**.
   - This is particularly valuable for hate speech detection, where context often changes the semantic meaning of words.
 
----
 
 ## c) Enhanced Context Capturing Through Multi-Gram Analysis
 - **Comparison with N-Gram Approaches**:
@@ -165,7 +159,6 @@ Our explainability method, **X-MuTeST**, introduces several distinct advantages 
     - **Trigrams**: 0.2
   - This hierarchical approach enhances the interpretability of hate speech explanations, accounting for the nuanced influence of surrounding context.
 
----
 
 ## d) Comparison with LIME
 - **Limitations of LIME**:
@@ -178,7 +171,6 @@ Our explainability method, **X-MuTeST**, introduces several distinct advantages 
   - Ensures comprehensive context analysis without unnecessary computational overhead.
   - Experiments (Tables 3, 4, and 5) show that X-MuTeST outperforms LIME (denoted as **L**) and HateXplain (denoted as **RL**) in providing reliable explanations.
 
----
 
 ## References
 
