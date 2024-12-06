@@ -16,6 +16,7 @@ To identify annotators capable of understanding the nature of hate speech and ef
 - Annotators who demonstrated high-quality annotation by accurately identifying hate speech and corresponding tokens were selected.
 - Out of 10 participants in the pilot, four annotators were shortlisted for the main task such that there were three annotators for each language.
 - Feedback from the pilot study was incorporated to improve instructions for the main task.
+- Selected annotators are from different geolocations. They are engineering students, and in a reward, they were provided free access to our GPU servers for more than 100 hrs.
 
 
 ## Main Annotation Task
