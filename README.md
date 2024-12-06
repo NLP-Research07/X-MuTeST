@@ -172,8 +172,6 @@ Our explainability method, **X-MuTeST**, introduces several distinct advantages 
   - Experiments (Tables 3, 4, and 5) show that X-MuTeST outperforms LIME (denoted as **L**) and HateXplain (denoted as **RL**) in providing reliable explanations.
 
 
-## References
-
 1. **Jain, S., & Wallace, B. C. (2019)**. Attention is not Explanation. In *Proceedings of NAACL-HLT 2019* (pp. 3543–3556).
 2. **Wiegreffe, S., & Pinter, Y. (2019)**. Attention is not not explanation. In *Proceedings of EMNLP-IJCNLP 2019*.
 3. **Kohli, A., & Devi, V. S. (2023)**. Explainable offensive language classifier. In *International Conference on Neural Information Processing* (pp. 299–313).
