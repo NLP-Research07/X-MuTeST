@@ -61,11 +61,17 @@ The Hindi and English datasets used in this research were sourced from the Hate 
 ### Telugu Dataset
 The Telugu dataset was sourced from the **Hate and Offensive Language Detection in Telugu Codemixed Text (HOLD-Telugu)** task, organized as part of **DravidianLangTech 2024**.
 
-#### Sources:
+#### Source:
 - Comments were collected from YouTube and annotated with binary class labels:
   - **HATE**
   - **NON-HATE**
 - **Original Script**: The dataset was originally provided in Latin script.
+
+#### Preprocessing:
+- The text was transliterated into Telugu script using the **IndicXlit** transliteration method to ensure compatibility with language-specific models.
+
+#### Testing Set:
+- A separate testing set was included as part of the dataset for evaluation.
 
 | **Metric**               | **Telugu** | **Hindi** | **English** |
 |--------------------------|------------|-----------|-------------|
