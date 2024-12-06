@@ -1,4 +1,4 @@
-![X-MuTeST Two-Stage Training Framework]([https://github.com/NLP-Research07/X-MuTeST/blob/main/method1.png])
+![X-MuTeST Two-Stage Training Framework](https://github.com/NLP-Research07/X-MuTeST/blob/main/method1.png)
 # Annotation Process
 
 ## Pilot Annotation
