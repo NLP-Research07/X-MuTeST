@@ -92,3 +92,64 @@ We acknowledge prior concerns about biases and artifacts in hate speech datasets
    - Annotators were trained to avoid biases by focusing on context and meaning, rather than personal interpretations or stereotypes.
 2. **Reducing Dataset Artifacts**:
    - Posts were carefully processed and curated to ensure that models trained on this dataset learn meaningful patterns rather than spurious correlations.
+
+
+# Unique Contributions of X-MuTeST in Explainability for Hate Speech Detection
+
+Our explainability method, **X-MuTeST**, introduces several distinct advantages compared to existing approaches, especially in the domain of hate speech detection:
+
+---
+
+## a) Comparison with Attention-Based Methods
+- **Limitations of Attention-Based Methods**:
+  - Attention weights are often entangled with model predictions, which can make them unreliable indicators of token importance.
+  - There is ongoing debate about whether attention weights should be considered valid explainability scores.
+    - **Against Attention**: Jain and Wallace [1].
+    - **In Favor of Attention**: Wiegreffe and Pinter [2].
+- **X-MuTeST Advantage**:
+  - Unlike attention-based methods, X-MuTeST directly computes token importance from model outputs using **contextual perturbations**, offering a more interpretable and grounded explanation mechanism.
+
+---
+
+## b) Comparison with Integrated Gradients (IG)
+- **Limitations of IG**:
+  - IG attributes feature importance using gradients from a baseline to the actual input but may overlook the contextual influence of neighboring words.
+- **X-MuTeST Advantage**:
+  - Explicitly evaluates **contextual dependencies** using **bigrams and trigrams**.
+  - This is particularly valuable for hate speech detection, where context often changes the semantic meaning of words.
+
+---
+
+## c) Enhanced Context Capturing Through Multi-Gram Analysis
+- **Comparison with N-Gram Approaches**:
+  - Prior n-gram-based methods, such as Kohli and Devi [3], use only trigrams for generating explanations.
+- **X-MuTeST Advantage**:
+  - Extends context analysis to **unigrams, bigrams, and trigrams**, capturing word dependencies up to five words (two on each side of the target word).
+  - Final importance scores are aggregated using weighted contributions:
+    - **Unigrams**: 0.5
+    - **Bigrams**: 0.3
+    - **Trigrams**: 0.2
+  - This hierarchical approach enhances the interpretability of hate speech explanations, accounting for the nuanced influence of surrounding context.
+
+---
+
+## d) Comparison with LIME
+- **Limitations of LIME**:
+  - Generates explanations by sampling sentence formations based on a fixed feature count.
+  - Challenges with feature count selection:
+    - **Low feature count**: Misses important contextual word combinations.
+    - **High feature count**: Includes redundant or less meaningful combinations, increasing computational cost without adding value.
+- **X-MuTeST Advantage**:
+  - Systematically evaluates all possible **n-grams** (up to trigrams) for every word in a sentence.
+  - Ensures comprehensive context analysis without unnecessary computational overhead.
+  - Experiments (Tables 3, 4, and 5) show that X-MuTeST outperforms LIME (denoted as **L**) and HateXplain (denoted as **RL**) in providing reliable explanations.
+
+---
+
+## References
+
+1. **Jain, S., & Wallace, B. C. (2019)**. Attention is not Explanation. In *Proceedings of NAACL-HLT 2019* (pp. 3543–3556).
+2. **Wiegreffe, S., & Pinter, Y. (2019)**. Attention is not not explanation. In *Proceedings of EMNLP-IJCNLP 2019*.
+3. **Kohli, A., & Devi, V. S. (2023)**. Explainable offensive language classifier. In *International Conference on Neural Information Processing* (pp. 299–313).
+4. **Ribeiro, M. T., Singh, S., & Guestrin, C. (2016)**. "Why should I trust you?" Explaining the predictions of any classifier. In *Proceedings of the 22nd ACM SIGKDD* (pp. 1135–1144).
+5. **Mathew, B., Saha, P., Yimam, S. M., Biemann, C., Goyal, P., & Mukherjee, A. (2021)**. HateXplain: A benchmark dataset for explainable hate speech detection. In *Proceedings of AAAI 2021* (Vol. 35, No. 17, pp. 14867–14875).
