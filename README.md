@@ -1,6 +1,5 @@
-# X-MuTeST
 
-## Annotation Process
+# Annotation Process
 
 ## Pilot Annotation
 
