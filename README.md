@@ -73,6 +73,8 @@ The Telugu dataset was sourced from the **Hate and Offensive Language Detection 
 #### Testing Set:
 - A separate testing set was included as part of the dataset for evaluation.
 
+### Dataset Table
+
 | **Metric**               | **Telugu** | **Hindi** | **English** |
 |--------------------------|------------|-----------|-------------|
 | **Total Records**        | 4,492      | 6,004     | 6,334       |
