@@ -1,4 +1,4 @@
-
+![X-MuTeST Two-Stage Training Framework](path/to/your/image.png)
 # Annotation Process
 
 ## Pilot Annotation
