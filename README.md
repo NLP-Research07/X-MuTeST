@@ -51,7 +51,7 @@ The Hindi and English datasets used in this research were sourced from the Hate 
 
 #### Dataset Preparation:
 - Datasets from both HASOC 2020 and HASOC 2021 were combined to increase the total number of samples for both Hindi and English.
-- Binary labels were applied, categorizing sentences into two classes:
+- Binary labels were given in the dataset, categorizing sentences into two classes:
   - **HATE**
   - **NOT HATE**
 
