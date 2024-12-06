@@ -127,6 +127,8 @@ X-MuTeST leverages **n-grams (unigrams, bigrams, trigrams)** to capture context 
 
 ---
 
+It is also to be noted that the proposed framework is devised to not only enhance explainability but also classification performance by incorporating 2-stage training that incorporates human-rationale in the training. Additionally, one of our major contributions lies in proposing a dataset with human-annotated datasets to address the challenges of explainable hate speech detection in under-resourced languages.
+
 # Advantages and comparison of X-MuTeST in Explainability for Hate Speech Detection
 
 Our explainability method, **X-MuTeST**, introduces several distinct advantages compared to existing approaches, especially in the domain of hate speech detection:
