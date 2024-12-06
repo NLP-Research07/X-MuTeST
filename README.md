@@ -1,6 +1,8 @@
 ![X-MuTeST Two-Stage Training Framework](https://github.com/NLP-Research07/X-MuTeST/blob/main/method1.png)
 ---
 ![Rationale-guided Training Loss Computation](https://github.com/NLP-Research07/X-MuTeST/blob/main/training.png)
+
+<img src=https://github.com/NLP-Research07/X-MuTeST/blob/main/training.png width="500" />
 # Annotation Process
 
 ## Pilot Annotation
