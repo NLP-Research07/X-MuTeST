@@ -92,6 +92,40 @@ We acknowledge prior concerns about biases and artifacts in hate speech datasets
 2. **Reducing Dataset Artifacts**:
    - Posts were carefully processed and curated to ensure that models trained on this dataset learn meaningful patterns rather than spurious correlations.
 
+# Methodology: Unigrams, Bigrams, and Trigrams for Contextual Analysis
+X-MuTeST leverages **n-grams (unigrams, bigrams, trigrams)** to capture context up to **five words** (two to the left and two to the right of the target word). The process for computing word importance is structured as follows:
+
+### a) Unigrams
+- **Process**: Each word in the sentence is passed individually (as a unigram) to the model, and its classification probability is calculated.
+- **Importance**: The importance score of the word is computed as the **difference** between:
+  - The classification probability of the entire sentence.
+  - The probability with just the unigram.
+
+---
+
+### b) Bigrams
+- **Contextual Dependence**: Words often derive meaning from adjacent words (e.g., *"not good"* vs. *"good"*).
+- **Process**:
+  - All bigrams containing the target word are evaluated.
+  - The classification probability for each bigram is calculated, and the **difference** from the full sentence probability is determined.
+  - Since multiple bigrams exist for a word, the **average difference** is used as the score.
+
+---
+
+### c) Trigrams
+- **Broader Context**: Extends the analysis to two words on either side of the target word.
+- **Process**: Similar to bigrams, but considers all trigrams containing the target word.
+
+---
+
+### Aggregation of Importance Scores
+- Final importance score for a word is computed by aggregating the unigram, bigram, and trigram scores using weighted contributions:
+  - **Unigrams**: 0.5
+  - **Bigrams**: 0.3
+  - **Trigrams**: 0.2
+- **Higher-Order N-Grams**: Experiments with n-grams larger than trigrams showed no improvement, as additional context did not provide meaningful information.
+
+---
 
 # Advantages and comparison of X-MuTeST in Explainability for Hate Speech Detection
 
