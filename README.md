@@ -45,17 +45,17 @@ To identify annotators capable of understanding the nature of hate speech and ef
 
 The Hindi and English datasets used in this research were sourced from the Hate Speech and Offensive Content Identification (HASOC) contest, which focuses on identifying hate speech and offensive language across multiple languages and dialects. 
 
-### Sources:
+#### Sources:
 - **HASOC 2020**: Includes annotated samples from Twitter featuring instances of hate speech and offensive content.
 - **HASOC 2021**: Expands on the previous year's dataset with additional annotated samples.
 
-### Dataset Preparation:
+#### Dataset Preparation:
 - Datasets from both HASOC 2020 and HASOC 2021 were combined to increase the total number of samples for both Hindi and English.
 - Binary labels were applied, categorizing sentences into two classes:
   - **HATE**
   - **NOT HATE**
 
-### Data Splitting:
+#### Data Splitting:
 - For both Hindi and English, 15% of the combined dataset was reserved for testing to ensure reliable evaluation.
 
 | **Metric**               | **Telugu** | **Hindi** | **English** |
