@@ -32,7 +32,12 @@ To identify annotators capable of understanding the nature of hate speech and ef
 
 ### Quality Assessment
 - The inter-annotator agreement scores were calculated using Cohen’s Kappa for pairwise comparisons between annotators, while the overall agreement was assessed using Fleiss' Kappa method.
-
+- 
+| **Language** | **A1 & A2** | **A2 & A3** | **A3 & A1** | **Overall** |
+|--------------|-------------|-------------|-------------|-------------|
+| **Telugu**   | 82.50       | **87.75**   | **88.25**   | 81.00       |
+| **Hindi**    | **86.45**   | **88.00**   | 79.20       | 83.15       |
+| **English**  | **87.60**   | 82.00       | **89.30**   | 85.10       |
 ---
 
 ## Dataset Details
