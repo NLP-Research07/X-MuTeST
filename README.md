@@ -57,7 +57,5 @@ To identify annotators capable of understanding the nature of hate speech and ef
 We acknowledge prior concerns about biases and artifacts in hate speech datasets. To mitigate these issues:
 1. **Annotator Training**:
    - Annotators were trained to avoid biases by focusing on context and meaning, rather than personal interpretations or stereotypes.
-2. **Linguistic Diversity**:
-   - Content was sourced from multiple platforms and languages to ensure coverage of diverse linguistic and cultural phenomena.
-3. **Reducing Dataset Artifacts**:
-   - Posts were carefully curated to ensure that models trained on this dataset learn meaningful patterns rather than spurious correlations.
+2. **Reducing Dataset Artifacts**:
+   - Posts were carefully processed and curated to ensure that models trained on this dataset learn meaningful patterns rather than spurious correlations.
